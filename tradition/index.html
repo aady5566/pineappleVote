@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>鳳梨酥投票系統</title>
+    <!-- Custom CSS -->
+    <link href="./css/ydcss.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+  <div class="row" id="title">
+    <h1 class="text-center">鳳梨酥生死鬥之 <small>到底哪一家好吃</small></h1>
+  </div>
+  <!-- 輪播 -->
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img class="img-responsive center-block" src="http://manhuo.foryou.tw.cn/uploads/allimg/131108/1-13110Q61430.jpg" height="55.5%" width="55.5%">
+      <div class="carousel-caption">
+        <h1>邪惡的美味、體重的殺手</h1>
+      </div>
+    </div>
+    <div class="item">
+      <img class="img-responsive center-block" src="https://photos-5.dropbox.com/t/2/AAAThfj1yKS9Hdko7mtQZZEO7mIjGl3yI524CSTLZvKBoQ/12/36400547/png/32x32/1/_/1/2/hans.png/EJXh1hsYp-MBIAcoBw/c4sIQn6jGmeO5i9-9aU5eh1m_OLp8B2n5rJC-NacwWI?dl=0&size=2048x1536&size_mode=3" height="50%" width="50%">
+      <div class="carousel-caption">
+      </div>
+    </div>
+    <div class="item">
+      <img class="img-responsive center-block" src="https://photos-1.dropbox.com/t/2/AACx1YFaTrohe658fGJXsfXTKgZ0lsR6FSYrBjOcLF4Y2Q/12/36400547/png/32x32/1/_/1/2/yd.png/EJXh1hsYqOMBIAcoBw/YdNsSafPJazj4b7_WPaQZQU3b5gb_9BpSGLB8VMKtGY?dl=0&size=2048x1536&size_mode=3" height="50%" width="50%">
+      <div class="carousel-caption">
+      </div>
+    </div>
+  </div>
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  </div>
+  <!-- 輪播結束 -->
+  <div class="row">
+    <div id='demonstrate' class="col-md-12">
+      <div class="row" style="text-align:center;">
+        <div class="col-md-8 col-md-offset-2">
+          <h3>品嚐前，你各位不會知道鳳梨酥的包裝、品牌、價格等資訊。</h3>
+          <h3>唯一的評價，來自於鳳梨酥<mark>外層酥脆、內餡綿密</mark>的口感。</h3>
+        </br>
+          <h4>吃完一個棉花糖，通常都不急著吃第二個。</h4>
+          <h5>貼心提醒：專業的鳳梨酥達人吃完第一塊鳳梨酥後，會先漱漱口，等待兩分鐘，回憶方才溫潤的滋味，再品嚐第二塊。</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <!-- Button 1 -->
+    <button type="button" style="border-radius: 0px;" id="click-me-button" class="col-md-6 btn btn-success btn-lg" data-toggle="modal" data-target="#btn1">
+      票投1號
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="btn1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title text-center" id="myModalLabel">您已將票投給1號</h4>
+          </div>
+          <div class="modal-body text-center">
+            1號鳳梨酥痛哭流涕ing...
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end Button1 -->
+    <!-- Button 2 -->
+    <button type="button" style="border-radius: 0px;" id="click-me-button2" class="col-md-6 btn btn-warning btn-lg" data-toggle="modal" data-target="#btn2">
+      票投2號
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="btn2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title text-center" id="myModalLabel2">您已將票投給2號</h4>
+          </div>
+          <div class="modal-body text-center">
+            2號鳳梨酥感謝您的大恩大德!
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end Button2 -->
+  </div>
+  <!-- Button result -->
+  <button type="button" style="border-radius: 0px;" id="result" class="col-md-12" data-toggle="modal" data-target="#btnResult">
+    <span>鹿死誰手</span>
+  </button>
+  <!-- Modal -->
+  <div class="modal fade" id="btnResult" tabindex="-1" role="dialog" aria-labelledby="myModalLabelResult" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h4 class="modal-title text-center" id="myModalLabelResult">獲勝者</h4>
+        </div>
+        <div class="modal-body text-center">
+          TODO
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end Button result -->
+
+<!--YD function-->
+<script type="text/javascript" src="./js/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="./js/ydFunction.js"></script>
+<!-- 依需要參考已編譯外掛版本（如下），或各自獨立的外掛版本 -->
+<script src="./js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

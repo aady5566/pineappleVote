@@ -1,0 +1,63 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+#title{
+  background-color: rgba(249,191,69,1);
+}
+.row{
+  font-family: 'Noto Sans TC', sans-serif;
+}
+#demonstrate{
+  background-color:  rgba(0,137,167,1);
+  color: #fff;
+}
+#click-me-button{
+/*color:red;
+background-color: white;
+border-radius: 5px;*/
+}
+.carousel {
+        background: black;
+        position: relative;
+        padding: 10px;     /* Shows as a border around the carousel */
+    }
+.carousel-indicators li {/*remove pagination dots*/
+  visibility: hidden;
+}
+
+
+#result {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 25px;
+  padding: 20px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+#result span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#result span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#result:hover span {
+  padding-right: 25px;
+}
+
+#result:hover span:after {
+  opacity: 1;
+  right: 0;
+}
